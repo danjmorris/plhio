@@ -38,7 +38,6 @@ Use [Grunt](https://github.com/gruntjs/grunt-cli) to start the server:
 
     $ grunt serve
 
-
 ## Troubleshooting
 During install some of you may encounter some issues, most of this issues can be solved by one of the following tips.
 
@@ -84,7 +83,7 @@ There are three environments provided by default, __development__, __test__, and
 
 To run with a different environment, just specify NODE_ENV as you call grunt:
 
-	$ NODE_ENV=test grunt server
+	$ NODE_ENV=test grunt serve
 
 > NOTE: Running Node.js applications in the __production__ environment enables caching, which is disabled by default in all other environments.
 
@@ -99,6 +98,12 @@ Before you start make sure you have [heroku toolbelt](https://toolbelt.heroku.co
 3. `heroku addons:add mongohq`
 
 That's it! Your app should be live and shareable. Type `heroku open` to view it.
+
+After app modifications run:
+
+    grunt heroku
+    
+then commit and push the heroku folder.
 
 ## Contribution Help and Guidelines
 Coming soon...
