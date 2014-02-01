@@ -8,7 +8,7 @@ var express = require('express'),
 var app = express();
 
 // Connect to database
-var db = require('./lib/db/mongo');
+var db = require('./lib/db/postgres');
 
 // Bootstrap models
 var modelsPath = path.join(__dirname, 'lib/models');
