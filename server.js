@@ -24,15 +24,8 @@ require('./lib/db/dummydata');
 require('./lib/config/express')(app);
 
 // Controllers
-var api = require('./lib/controllers/api'),
-    index = require('./lib/controllers');
-
-// Server Routes
-app.get('/api/awesomeThings', api.awesomeThings);
-
-// Angular Routes
-app.get('/partials/*', index.partials);
-app.get('/*', index.index);
+// Routes
+require('./lib/controllers/routes')(app);
 
 // Start server
 var port = process.env.PORT || 8124;
