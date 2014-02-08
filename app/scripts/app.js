@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('plhApp', [
+angular.module('myApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
